@@ -42,7 +42,7 @@ This project analyzes a **retail sales database** using **SQL** to deliver actio
 ---
 ## 🛠️ SQL Concepts Used  
 
-```sql
+
 -- Data Cleaning
 UPDATE, DELETE, ALTER, JOIN  
 -- Aggregations
@@ -51,6 +51,19 @@ SUM(), COUNT(), ROUND()
 STR_TO_DATE(), DATEDIFF(), DATE_FORMAT(), EXTRACT()  
 -- Window Functions
 LAG() OVER (ORDER BY ...)  
-
 -- Customer Segmentation
 CASE WHEN logic
+
+---
+## 📂 Dataset  
+- **The project uses 3 main tables:** 
+- 👥 Customers → demographics & join dates  
+- 📦 Products → categories & prices  
+- 🧾 Sales → transaction-level purchase details  
+
+---
+## 🚀 Outcomes
+-✔ Cleaned & standardized dataset
+-✔ Built monthly & quarterly sales trend reports
+-✔ Profiled customer segments for marketing
+-✔ Delivered insights for revenue growth & expansion
