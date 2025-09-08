@@ -1,40 +1,40 @@
-📖 **Project Overview**
+📖 Project Overview
 
-This project analyzes a retail sales database using SQL to generate key business insights. The workflow includes data cleaning, handling missing values, outlier treatment, and fixing inconsistencies across tables. It then performs exploratory data analysis (EDA) to study:
--Sales trends (monthly, quarterly, MoM growth)
--Customer purchase behavior
--Product performance
--Regional insights
+This project analyzes a retail sales database using SQL to deliver actionable business insights.
+The workflow covers:
 
-The project highlights how SQL can transform raw retail data into actionable insights for data-driven decision-making.
+🧹 Data Cleaning → handling nulls, fixing inconsistencies, removing duplicates & outliers
+📊 Exploratory Data Analysis (EDA) → sales trends, customer profiling, product performance, regional insights
+📈 Business Insights → customer segmentation, loyalty analysis, revenue growth drivers
 
-⚙️ **Data Cleaning Steps**
--Replaced missing/blank values in customer location with the most frequent value
--Standardized date formats across tables
--Removed duplicate sales transactions
--Fixed price mismatches between sales and products tables
--Treated outliers (e.g., incorrect ages like 131)
+⚙️ Data Cleaning
 
-📊 **Exploratory Data Analysis (EDA)**
--**Product Performance**
-  -Identified top-selling products & categories by units and revenue
-  -Highlighted underperforming products
--**Sales Trends**
-  -Analyzed monthly & quarterly sales
-  -Calculated **Month-over-Month (MoM)** growth using SQL window functions
--**Customer Profiling**
-  -Segmented customers by age group, gender, purchase frequency, and spending
-  -Identified loyal customers, high spenders, and occasional buyers
--**Regional Insights**
-  -Found the West region leads in sales
-  -East region has potential for targeted growth strategies
+✔ Replaced missing/blank values in customers table
+✔ Standardized date formats across tables
+✔ Removed duplicate sales transactions (TransactionID)
+✔ Fixed price mismatches between sales & products
+✔ Treated outliers (e.g., unrealistic ages like 131)
 
-💡 **Key Insights**
+📊 Exploratory Data Analysis
+🔹 Product Performance
+  Identified top-selling products by units & revenue
+  Found underperforming products & categories
+🔹 Sales Trends
+  Monthly & quarterly sales patterns
+  Month-over-Month (MoM) growth using LAG() window function
+🔹 Customer Profiling
+  Segmented by age group, gender, purchase frequency, spending
+  Identified loyal customers & occasional buyers
+🔹 Regional Insights
+  West region → highest revenue
+  East region → low sales, potential for growth
 
--Old-age customers generate the highest revenue, while adults spend the least
--Product 17 is a top-performing product
--West region drives maximum sales; East shows scope for expansion
--Loyal customers with 10+ transactions & >₹2000 spend are highly valuable
+💡 Key Insights
+
+📌 Old-age customers contribute the highest revenue
+📌 Product 17 is the top-performing product
+📌 West region dominates sales; East needs focus
+📌 Loyal customers with 10+ transactions & >2000 revenue are most valuable
 
 🛠️ **SQL Concepts Used**
 
